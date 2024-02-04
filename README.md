@@ -3,3 +3,4 @@ George
 using the digimoncard lesson and previous lessons I completed this assignment
 Peer reviewed by : Ashur
 Peer Review : nice design; the app mostly work, but there are some issues; search by numbers is not working; the heart icon is not changing; you can only add or delete favorites.
+Post review: I fixed the issues mentioned in review.
