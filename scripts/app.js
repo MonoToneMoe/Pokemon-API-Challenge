@@ -211,17 +211,14 @@ navbarSearch.addEventListener("keydown", async (event) => {
   let evolutionPath;
 
   if (event.key === "Enter") {
-    // Fetch data for the entered Pokemon name or ID
     const searchData = await pokemonApi(event.target.value.toLowerCase());
 
-    // Check if the response is successful and contains valid Pokemon data
     pokemon = searchData;
     pokemonLocation = searchData.location_area
       ? searchData.location_area.name
       : "N/A";
     pokemonEvoChain = await pokemonEvolutions(pokemon.id);
 
-    // Update the UI with the new Pokemon data
     updateFavoriteImage();
     pokemonName.textContent =
       pokemon.species.name.charAt(0).toUpperCase() +
